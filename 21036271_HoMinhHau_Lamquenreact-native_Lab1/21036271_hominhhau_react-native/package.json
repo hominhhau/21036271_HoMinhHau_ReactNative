@@ -12,7 +12,9 @@
     "react": "18.2.0",
     "react-native": "0.74.5",
     "@expo/vector-icons": "^14.0.2",
-    "react-native-paper": "4.9.2"
+    "react-native-paper": "4.9.2",
+    "expo-linear-gradient": "~13.0.2",
+    "react-native-vector-icons": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

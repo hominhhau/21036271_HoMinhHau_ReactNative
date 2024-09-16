@@ -1,9 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import {LinearGradient} from 'expo-linear-gradient';
 
-const FristScreen = () => {
+
+const Screen1_a = () => {
   return (
-    <View style={styles.container}>
+    <LinearGradient
+     colors={['#cbf3f6','#cbf3f6','#def4f5','#ffffff', '#00CCF9']} // Gradient colors (from light blue to blue)
+  style={styles.container}
+    >
       {/* Circle */}
       <View style={styles.circle} />
 
@@ -25,39 +30,38 @@ const FristScreen = () => {
           <Text style={styles.buttonText}>SIGN UP</Text>
         </TouchableOpacity>
       </View>
-    </View>
+      <view style={styles.text}>
+      HOW WE WORK?
+      </view>
+    </LinearGradient>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    // justifyContent: 'center',
+    justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#00BFFF', // Light blue background
   },
   circle: {
-    marginTop:50,
-    marginBottom:50,
+    marginTop: 50,
+    marginBottom: 50,
     width: 120,
     height: 120,
     borderRadius: 60,
     borderWidth: 10,
     borderColor: 'black',
-    
   },
   title: {
     fontSize: 28,
     fontWeight: 'bold',
     color: 'black',
     textAlign: 'center',
-    
-    
   },
   description: {
-    marginTop:50,
-    marginBottom:50,
-    fontSize: 16,
+    marginTop: 30,
+    marginBottom: 50,
+    fontSize: 15,
     color: 'black',
     textAlign: 'center',
     marginVertical: 20,
@@ -67,15 +71,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     width: '80%',
-    marginTop: 20,
-    marginTop:50,
-    marginBottom:50,
+ 
   },
   button: {
-    backgroundColor: 'yellow',
+    backgroundColor: '#E3C000',
     paddingVertical: 10,
     paddingHorizontal: 30,
-    borderRadius: 10,
     marginHorizontal: 10,
   },
   buttonText: {
@@ -83,6 +84,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
   },
+  text:{
+    margin:10,
+    
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  }
 });
 
-export default FristScreen;
+
+export default Screen1_a;
